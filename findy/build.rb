@@ -51,7 +51,7 @@ x_length = aa_data.first.length
 y_length = aa_data.length
 last_point = aa_data.last.split('1').last.length # 最終行に1がないパターンは考慮しない
 end_text_start_point = last_point + end_text.length
-normal_text_length = "\e[0m#\e[m".length
+output_text_length = "\e[0m#\e[m".length
 
 bits = aa.gsub("\n", '').reverse.to_i(2)
 
@@ -72,7 +72,7 @@ code = <<CODE
     o<<(n[i]==1?m+"["+t.to_s+"m"+e[j+=1]+m+"[m":#{' '.ord})
     o<<(i%#{x_length}==#{x_length - 1}?#{"\n".ord}:"")
   }
-  o[-#{end_text_start_point + end_text.length * normal_text_length},#{(end_text.length + 1) * normal_text_length}]=l+"#{end_text}"
+  o[-#{end_text_start_point + end_text.length * output_text_length},#{(end_text.length + 1) * output_text_length}]=l+"#{end_text}"
   puts(o)
 CODE
 
