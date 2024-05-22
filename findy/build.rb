@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 aa = <<~END
   0000000000000111111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   0000000001111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
@@ -48,8 +50,8 @@ aa_data = aa.split("\n")
 x_length = aa_data.first.length
 y_length = aa_data.length
 last_point = aa_data.last.split('1').last.length # 最終行に1がないパターンは考慮しない
-end_text_start_point = last_point + end_text.length + 1
-normal_text_length = "\e[0m#\2[0m".length
+end_text_start_point = last_point + end_text.length
+normal_text_length = "\e[0m#\e[m".length
 
 bits = aa.gsub("\n", '').reverse.to_i(2)
 
@@ -57,17 +59,17 @@ bin = [Marshal.dump(bits)].pack('m').gsub("\n", '')
 colors_text = colors.to_s.gsub(' ', '').gsub("\n", '')
 
 code = <<CODE
+  c=eval("#{colors_text}").flat_map(&:to_a)
+  n=Marshal.load("#{bin}".unpack("m")[0])
   l=#{"'".ord}.chr
   m=#{"\e".ord}.chr
-  n=Marshal.load("#{bin}".unpack("m")[0])
-  c=eval("#{colors_text}").flat_map(&:to_a)
   e="#{start_text}"+l+($s*2)
   o=""
   j=-1
 
   0.upto(#{y_length * x_length - 1}){|i|
     t=(c.include?(i)?34:#{blank_color})
-    o<<(n[i]==1?m+"["+t.to_s+"m"+e[j+=1]+m+"[0m":#{' '.ord})
+    o<<(n[i]==1?m+"["+t.to_s+"m"+e[j+=1]+m+"[m":#{' '.ord})
     o<<(i%#{x_length}==#{x_length - 1}?#{"\n".ord}:"")
   }
   o[-#{end_text_start_point + end_text.length * normal_text_length},#{(end_text.length + 1) * normal_text_length}]=l+"#{end_text}"

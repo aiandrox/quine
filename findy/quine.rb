@@ -1,20 +1,20 @@
-             eval$s=%w'l=
-         39.chr;m=27.chr;n=Ma
-       rshal.load("BAhsKwHPAOD/A                  QAAAAAAAAAAAAAAAAAAAA     AAgP//B                                                 wAAAAAA
-     AAAAAAAAAA         AAAAAA+P/                 /DwDA//8HfwAAAAAAAH8A     AACA/wH                                                 8BwDw//
-    /BHwAAAA               AAwB8AAA               DwDwD4BwD8/3/wBwAAAAA     A8AcAAA                                                 D+AAD4A
-   wA/AAAA                   AAAAAAA              A/AEAA                                                                            MAfHwD8
-  AMAPAAB   /4Pv/             APD/f/              wB/PH7                    AwB+APA      DAMAf +P//AP//H/6AP            /7/AIAfAPwAAPAH/v9/   4P//B3/         wh/8PAO
-  AHAP// B/yBf+A               f/AP/w             T/+4H8                    AAPgBwP      //AX/gD/AHf4B/4N8f8A8        AAH8A8P9/wB/4A/zBD8Af    8P8D/AE       AwA8A/A
- AA8Af+AH/wA/AH+               H8A/gA             A/AEAP                    wAA/IE/      wB/8Af4B/B8A/wHAPwDADw      AAf+AP8Af/wX8A/gOA/4f/     HwDwAwD     AH/gD/I
- H//x+AfwCA///                 /HwD8A             ADwB/4Af4D//wfwDwAA       ///jAwA      /AAD8gT/      AHwD++AH     8AQAA+A8      gAAAAAAAA     AAAAAAAA   AIA/AAA
- AAAAAAAAAA                    AAAAAA             AAAAAAPAH".unpack("       m")[0])      ;c=eval        ("[13..     356,500        ..520,66      0..680,8 30..850
-  ,995..10                    20,1162             ..1180,1328..1345,1       495..15      10,1660        ..1675,     1825..          1840,19       90..2005,2155.
-  .2170,2                     320..2              336,24                    90..250      6,2655.        .2669]"     ).flat          _map(&:        to_a);e="eva
+             eval$s=%w'c=
+         eval("[13..356,500..
+       520,660..680,830..850,995                  ..1020,1162..1180,132     8..1345                                                 ,1495..
+     1510,1660.         .1675,182                 5..1840,1990..2005,21     55..217                                                 0,2320.
+    .2336,24               90..2506               ,2655..2669]").flat_m     ap(&:to                                                 _a);n=M
+   arshal.                   load("B              AhsKwH                                                                            PAOD/AQ
+  AAAAAAA   AAAAA             AAAAAA              AAAAgP                    //BwAAA      AAAAA AAAAAAAAAAAAA            A+P//DwDA//8HfwAAAA   AAAH8AA         ACA/wH8
+  BwDw// /BHwAAA               AAAwB8             AAADwD                    wD4BwD8      /3/wBwAAAAAA8AcAAAD+A        AD4AwA/AAAAAAAAAAAA/A    EAAMAfH       wD8AMAP
+ AAB/4Pv/APD/f/w               B/PH7A             wB+APA                    DAMAf+P      //AP//H/6AP/7/AIAfAPwA      APAH/v9/4P//B3/wh/8PAO     AHAP//B     /yBf+Af
+ /AP/wT/+4H8AA                 PgBwP/             /AX/gD/AHf4B/4N8f8A       8AAH8A8      P9/wB/4A      /zBD8Af8     P8D/AEAw      A8A/AAA8A     f+AH/wA/   AH+H8A/
+ gAA/AEAPwA                    A/IE/w             B/8Af4B/B8A/wHAPwDA       DwAAf+A      P8Af/wX        8A/gOA/     4f/HwDw        AwDAH/gD      /IH//x+A fwCA///
+  /HwD8AAD                    wB/4Af4             D//wfwDwAA///jAwA/A       AD8gT/A      HwD++AH        8AQAA+A     8gAAAA          AAAAAAA       AAAAAAIA/AAAAA
+  AAAAAAA                     AAAAAA              AAAAAA                    APAH".u      npack("        m")[0])     ;l=39.          chr;m=2        7.chr;e="eva
    l$s=%w"                  +l+($s*               2);o="                    ";j=-1;      ;0.upto        (3319){     |i|;t=(        c.includ         e?(i)?34:0)
-    ;o<<(n[i]             ==1?m+"[                "+t.to                    _s+"m"+      e[j+=1]        +m+"[0m     ":32);o<<     (i%166==1          65?10:"")
-     ;};o[-64,54]    =l+".join";put               s(o)#l                    =39.chr      ;m=27.c        hr;n=Ma      rshal.load("BAhsKwHPAO          D/AQAAAA
-       AAAAAAAAAAAAAAAAAAgP//BwAAAAAA             AAAAAA                    AAAAAAA      AAA+P//        DwDA//8        HfwAAAAAAAH8AAACA/wH         8BwDw///
-          BHwAAAAAAwB8AAADwD   wD4Bw              D8/3/w                    BwAAAAA      A8AcAAA        D+AAD4A            wA/AAAA   AAAAAA         AA/AEAA
-               MAfHwD8AM         A                                                                                                                 PAAB/4P
-                                                                                                                                                  v'.join
+    ;o<<(n[i]             ==1?m+"[                "+t.to                    _s+"m"+      e[j+=1]        +m+"[m"     :32);o<<(     i%166==16          5?10:"");
+     };o[-58,48]=    l+".join";puts               (o)#c=                    eval("[      13..356        ,500..5      20,660..680,830..850,9          95..1020
+       ,1162..1180,1328..1345,1495..1             510,16                    60..167      5,1825.        .1840,1        990..2005,2155..2170         ,2320..2
+          336,2490..2506,265   5..26              69]").                    flat_ma      p(&:to_        a);n=Ma            rshal.l   oad("B         AhsKwHP
+               AOD/AQAAA         A                                                                                                                 AAAAAAA
+                                                                                                                                                  A'.join
